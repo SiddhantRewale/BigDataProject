@@ -16,21 +16,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code from master branch
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      # Configure AWS Credential
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+      # Deploy to AWS CloudFormation
+      - name: Deploy to AWS CloudFormation
+      - uses: aws-actions/aws-cloudformation-github-deploy@v1
+        with:
+          name: test-stack
+          template: Final-CFT.yml
+          no-fail-on-empty-changeset: "1"
         env:
           AWS_ACCESS_KEY_ID: ASIA2YUNDFXWGILTKAQI
           AWS_SECRET_ACCESS_KEY: cxiMmPJ4CNEJI26G9NOQ5cwYUgy+MADsm8BCozvz
           AWS_DEFAULT_REGION: 'us-east-1'
           AWS_SESSION_TOKEN: FwoGZXIvYXdzEBwaDKk/NznpF5uX/XhqPCLFAc09bawAuPd/+kDKqHweTb+Wo/bf7Yhhn9MS1nLPJF9gWQyQBdPl6EI3Q0nzb89PaPLcL4Zzy5xv0LVOMxVJ6cHixQuewtq49wM+lhFODUlBhg04JpeJXlK8b36kZRn3n6zvgF1TkMYVDzXcN5PfllcWArfcDR8HC2QcB/OwtypxLglF+QT4jAO+svXL7sBgwkQ6lYhuoyu1SrJ3oDezaLb9s/DvHX5NCdEwBZQuzMSnJzKn19cinlFCqLo0TpECztK9Z6ZCKNPevaAGMi3QK0ashS/GsEkaFuy8B1A9lhATTW39tJU9zB0+eL009/PC5Galj+1JsqVPN20=
       
-      # Deploy to AWS CloudFormation
-      - name: Deploy to AWS CloudFormation
-        uses: aws-actions/aws-cloudformation-github-deploy@v1
-        with:
-          name: test-stack
-          template: Final-CFT.yml
-          no-fail-on-empty-changeset: "1"
