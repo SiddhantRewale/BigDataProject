@@ -14,11 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout code from master branch
-      - uses: actions/checkout@v2
-
-      # Deploy to AWS CloudFormation
+    # Deploy to AWS CloudFormation
       - name: Deploy to AWS CloudFormation
       - uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
