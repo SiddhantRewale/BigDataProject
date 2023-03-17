@@ -41,7 +41,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: test-stack-bucket
-          template: createbucket.yml
+          template: createbucket.yaml
           no-fail-on-empty-changeset: "1"
        
 
