@@ -1,4 +1,4 @@
-name: 'Deploy to AWS CloudFormation'
+name: 'Updated- Deploy to AWS CloudFormation'
 on: 
   push:
     branches: [ master ]
