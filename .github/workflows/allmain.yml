@@ -27,7 +27,7 @@ jobs:
           aws-region: 'us-east-1' 
           
       # bucket cretion for python script
-      - name: Deploy to AWS CloudFormation
+      - name: Deploy to AWS CloudFormation for bucket creation
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: test-stack-bucket
@@ -41,10 +41,10 @@ jobs:
 
 
       # Deploy to AWS CloudFormation
-      - name: Deploy to AWS CloudFormation
+      - name: Deploy to AWS CloudFormation for resources creation
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
-          name: test-stack
+          name: test-stack-ALL
           template: Final-CFT.yml
           no-fail-on-empty-changeset: "1"
           
