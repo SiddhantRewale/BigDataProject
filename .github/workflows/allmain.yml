@@ -21,9 +21,9 @@ jobs:
         id: creds
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ASIA2YUNDFXWGE5CG5MV
-          aws-secret-access-key: oI7eNk6I9dnAiVclqml1oX284sm99gDN8DIrJMmF
-          aws-session-token: FwoGZXIvYXdzEH0aDAimDtarEFRNaYH1FyLFAe3kQK534xio3OC06ROvaSs0uieDYt8gxCPVn8uMLIyQ13FR+LFwu3IsGot8RARpj48ZBCavdukeJRdfl3fLktHh9ZHVL4eC+B2A9cWhyOCkmBJpyXdqq0rCnUf5/CSFlnooReiI+INbvlj5NpAbNqdLrpvt7UicsF/hwbs71XF7bFavxVESHVBSp0nSEp8Bxq1ORdNaUS+p00zJHKRTae7umOgu3+GHe/tiRlRLW59NWvaFa5J4+tK0ToL83C4EJd6IzZajKPb70qAGMi0jR4+pTXUvRJR5nOdMlFY9QZMmlqdE2w04mzWg93woCtva2EL66jjO1eQiT7w=
+          aws-access-key-id: ASIA2YUNDFXWP3EIECPB
+          aws-secret-access-key: w0BfsJmpsTu1Su0HIkWSuGtUt3y7bj5Iqlru1jcl
+          aws-session-token: FwoGZXIvYXdzEIf//////////wEaDKyNQ8hA7f8SP5EAbCLFAWYn0gUkgODtkTt0u3hD4srCb7KyAE3E+xHWcaUIuJ7uE1KdzwwKyQuNcVSFcGNT49SYY3GfZiCn5vkX3Z4SGrbw2+6AofBVuvXwokWpgcak12CYbzHm7scN595JnYVsKW6MVmZinJy4onzzg3h6D39gPXMX1lOiuCcappQ6CC2ptTTG4XjKqcjgk1LHWcOQnlZkdi2QU0b/PX4jGopYCCilyGZcS9LXEjQKVIL83pgif2iAPh2b4bj3FKzzAGwGIX0dFjyKKJGe1aAGMi3pA715Knz3kGXjOim++EuI3xbzoBDTr5SCeNoej5OFVLa0i5Sd0zYzxbCXv9A=
           aws-region: 'us-east-1' 
           
       # bucket cretion for python script
