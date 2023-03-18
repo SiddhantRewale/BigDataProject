@@ -48,3 +48,8 @@ jobs:
           template: Final-CFT.yml
           no-fail-on-empty-changeset: "1"
           
+          
+      # Runs a  single commands using the runners shell
+      - name: upload to s3
+        run: aws s3 cp s3://kbigdata/data/total_data.csv s3://tempairbnb/
+          
