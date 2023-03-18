@@ -36,7 +36,7 @@ jobs:
        
 
       # Runs a  single commands using the runners shell
-      - name: upload to s3
+      - name: upload py to s3
         run: aws s3 cp updated-gluescript.py s3://tempairbnb/
 
 
@@ -50,6 +50,6 @@ jobs:
           
           
       # Runs a  single commands using the runners shell
-      - name: upload to s3
+      - name: dump data to s3
         run: aws s3 cp s3://kbigdata/data/total_data.csv s3://tempairbnb/
           
