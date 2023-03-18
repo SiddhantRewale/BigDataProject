@@ -51,5 +51,5 @@ jobs:
           
       # Runs a  single commands using the runners shell
       - name: dump data to s3
-        run: aws s3 cp s3://kbigdata/data/total_data.csv s3://tempairbnb/
+        run: aws s3 cp s3://kbigdata/data/total_data.csv s3://airbnb-in-data/
           
